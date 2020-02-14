@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vip.Sat", "Vip.Sat\Vip.Sat.csproj", "{F04AB6E9-623A-4412-813B-990A531F2EB4}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Vip.Sat.Shared", "Vip.Sat.Shared\Vip.Sat.Shared.shproj", "{92E4E477-5576-4A8F-8703-5C7B7DD6C121}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Vip.Sat.Shared\Vip.Sat.Shared.projitems*{92e4e477-5576-4a8f-8703-5c7b7dd6c121}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F04AB6E9-623A-4412-813B-990A531F2EB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F04AB6E9-623A-4412-813B-990A531F2EB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F04AB6E9-623A-4412-813B-990A531F2EB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F04AB6E9-623A-4412-813B-990A531F2EB4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C6D296B1-4BAC-418A-B494-9DE9F2454994}
+	EndGlobalSection
+EndGlobal

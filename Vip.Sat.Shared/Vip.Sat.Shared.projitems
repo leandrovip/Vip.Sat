@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>92e4e477-5576-4a8f-8703-5c7b7dd6c121</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Vip.Sat.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Attributes\DFeAttributeAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Attributes\DFeBaseAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Attributes\DFeCollectionAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Attributes\DFeDictionaryAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Attributes\DFeDictionaryKeyAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Attributes\DFeDictionaryValueAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Attributes\DFeElementAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Attributes\DFeEnumAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Attributes\DFeIgnoreAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Attributes\DFeItemAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Attributes\DFeItemValueAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Attributes\DFeRootAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Attributes\DFeSignInfoElement.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Attributes\Ocorrencia.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Collection\DFeCollection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Collection\DFeParentCollection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Collection\DFeParentItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Common\DFeCodUF.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Common\DFeSaveOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Common\DFeTipoAmbiente.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Document\CanonicalizationMethod.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Document\DFeDocument.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Document\DFeSignature.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Document\DigestMethod.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Document\KeyInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Document\Reference.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Document\SignatureMethod.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Document\SignedInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Document\Transform.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Document\X509Data.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Serializer\CollectionSerializer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Serializer\DFeSerializer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Serializer\DFeSerializer.Extendend.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Serializer\DictionarySerializer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Serializer\InterfaceSerializer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Serializer\ObjectSerializer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Serializer\ObjectType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Serializer\PrimitiveSerializer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Serializer\SerializerOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DFeCore\Serializer\TipoCampo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Exceptions\Guard.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Exceptions\VipException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\AssemblyExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\AttributeExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\DFeExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\EnumerableExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\EventHandlerExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\IntExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\ObjectExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\StringExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\XDocumentExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Generics\GenericClone.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)StaticRandom.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)VipComponent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)VipExpandableObjectConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)VipLPStr.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)VipSafeHandle.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)VipStringWriter.cs" />
+  </ItemGroup>
+</Project>
