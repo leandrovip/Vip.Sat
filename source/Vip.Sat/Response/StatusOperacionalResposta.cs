@@ -44,15 +44,14 @@ namespace Vip.Sat.Response
             Status.StatusLan = RetornoLst[13] switch
             {
                 "NAO_CONECTADO" => StatusLan.NaoConectado,
-                _ => StatusLan.Conectado
+                _ => StatusLan.Conectado,
             };
             Status.NivelBateria = RetornoLst[14] switch
             {
                 "ALTO" => NivelBateria.Alto,
                 "MEDIO" => NivelBateria.Medio,
-                _ => NivelBateria.Baixo
+                _ => NivelBateria.Baixo,
             };
-
             Status.MTTotal = RetornoLst[15];
             Status.MTUsada = RetornoLst[16];
             Status.DhAtual = DateTime.ParseExact(RetornoLst[17], "yyyyMMddHHmmss", CultureInfo.InvariantCulture);
