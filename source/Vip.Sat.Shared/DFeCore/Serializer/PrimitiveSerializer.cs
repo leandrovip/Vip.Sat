@@ -149,23 +149,25 @@ namespace Vip.Sat.DFeCore.Serializer
                     break;
 
                 case TipoCampo.Int:
-                    if (valor is int vInt)
+                case TipoCampo.Long:
+                    switch (valor)
                     {
-                        if (ocorrencia == Ocorrencia.MaiorQueZero && vInt == 0)
-                        {
+                        case long vLong when ocorrencia == Ocorrencia.MaiorQueZero && vLong == 0:
+                        case int vInt when ocorrencia == Ocorrencia.MaiorQueZero && vInt == 0:
                             estaVazio = true;
-                        }
-                        else
-                        {
-                            conteudoProcessado = valor.ToString();
-                            if (conteudoProcessado.Length < min) conteudoProcessado = conteudoProcessado.ZeroFill(min);
-                        }
-                    }
-                    else
-                    {
-                        estaVazio = true;
-                    }
+                            break;
 
+                        case long _:
+                        case int _:
+                            conteudoProcessado = valor.ToString();
+                            if (conteudoProcessado.Length < min)
+                                conteudoProcessado = conteudoProcessado.ZeroFill(min);
+                            break;
+
+                        default:
+                            estaVazio = true;
+                            break;
+                    }
                     break;
 
                 case TipoCampo.StrNumberFill:
@@ -274,9 +276,11 @@ namespace Vip.Sat.DFeCore.Serializer
             switch (tipo)
             {
                 case TipoCampo.Int:
-                    ret = prop.PropertyType is long ? valor.ToInt64() : valor.ToInt32();
+                    ret = valor.ToInt32();
                     break;
-
+                case TipoCampo.Long:
+                    ret = valor.ToInt64();
+                    break;
                 case TipoCampo.DatHor:
                     ret = valor.ToData();
                     break;

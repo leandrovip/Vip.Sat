@@ -60,8 +60,7 @@ namespace Vip.Sat.Domain.CFe
         public string GetQRCode()
         {
             var documento = InfCFe.Dest.CNPJ.IsNullOrEmpty() ? InfCFe.Dest.CPF.OnlyNumbers() : InfCFe.Dest.CNPJ.OnlyNumbers();
-            return
-                $"{InfCFe.Id.OnlyNumbers()}|{InfCFe.Ide.DhEmissao:yyyyMMddHHmmss}|{InfCFe.Total.VCFe.ToString("0.00", CultureInfo.InvariantCulture)}|{documento}|{InfCFe.Ide.AssinaturaQrcode}";
+            return $"{InfCFe.Id.OnlyNumbers()}|{InfCFe.Ide.DhEmissao:yyyyMMddHHmmss}|{InfCFe.Total.VCFe.ToString("0.00", CultureInfo.InvariantCulture)}|{documento}|{InfCFe.Ide.AssinaturaQrcode}";
         }
 
         /// <summary>

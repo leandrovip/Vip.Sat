@@ -8,6 +8,11 @@ namespace Vip.Sat.Extensions
 {
     internal static class StringExtensions
     {
+        public static string TrimVip(this string value)
+        {
+            return value?.Trim() ?? string.Empty;
+        }
+
         /// <summary>
         ///     Verifica se a string é nula ou vazia
         /// </summary>
@@ -54,7 +59,7 @@ namespace Vip.Sat.Extensions
         /// <returns>System.String.</returns>
         public static string OnlyNumbers(this string value)
         {
-            return value.Trim().IsNullOrEmpty()
+            return value.TrimVip().IsNullOrEmpty()
                 ? string.Empty
                 : new string(value.Where(char.IsDigit).ToArray());
         }

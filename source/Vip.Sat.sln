@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vip.Sat", "Vip.Sat\Vip.Sat.
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Vip.Sat.Shared", "Vip.Sat.Shared\Vip.Sat.Shared.shproj", "{92E4E477-5576-4A8F-8703-5C7B7DD6C121}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vip.Sat.Demo", "Vip.Sat.Demo\Vip.Sat.Demo.csproj", "{8DC3C776-1B53-4C2E-AA44-760667BC8B41}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Vip.Sat.Shared\Vip.Sat.Shared.projitems*{92e4e477-5576-4a8f-8703-5c7b7dd6c121}*SharedItemsImports = 13
@@ -20,6 +22,10 @@ Global
 		{F04AB6E9-623A-4412-813B-990A531F2EB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F04AB6E9-623A-4412-813B-990A531F2EB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F04AB6E9-623A-4412-813B-990A531F2EB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DC3C776-1B53-4C2E-AA44-760667BC8B41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DC3C776-1B53-4C2E-AA44-760667BC8B41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DC3C776-1B53-4C2E-AA44-760667BC8B41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DC3C776-1B53-4C2E-AA44-760667BC8B41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,10 +1,12 @@
-﻿using System.IO;
+﻿using System;
+using System.Globalization;
+using System.IO;
 using System.Text;
 
 namespace Vip.Sat
 {
     /// <summary>
-    ///     Classe derivada da StringWriter que aceita a mudança de encond.
+    ///     Classe derivada da StringWriter que aceita a mudança de enconding e usa UTF8 como padrão.
     /// </summary>
     public sealed class VipStringWriter : StringWriter
     {
@@ -13,16 +15,49 @@ namespace Vip.Sat
         /// <summary>
         ///     Inicializar uma nova instancida da classe <see cref="VipStringWriter" />.
         /// </summary>
-        public VipStringWriter()
-        {
-            Encoding = Encoding.UTF8;
-        }
+        public VipStringWriter() : this(Encoding.UTF8, new StringBuilder(), CultureInfo.CurrentCulture) { }
 
         /// <summary>
         ///     Inicializar uma nova instancida da classe <see cref="VipStringWriter" />.
         /// </summary>
         /// <param name="encoding"></param>
-        public VipStringWriter(Encoding encoding)
+        public VipStringWriter(Encoding encoding) : this(encoding, new StringBuilder(), CultureInfo.CurrentCulture) { }
+
+        /// <summary>
+        ///     Inicializar uma nova instancida da classe <see cref="VipStringWriter" />.
+        /// </summary>
+        /// <param name="encoding"></param>
+        /// <param name="formatProvider"></param>
+        public VipStringWriter(Encoding encoding, IFormatProvider formatProvider)
+            : this(encoding, new StringBuilder(), formatProvider) { }
+
+        /// <summary>
+        ///     Inicializar uma nova instancida da classe <see cref="VipStringWriter" />.
+        /// </summary>
+        /// <param name="formatProvider"></param>
+        public VipStringWriter(IFormatProvider formatProvider)
+            : this(Encoding.UTF8, new StringBuilder(), formatProvider) { }
+
+        /// <summary>
+        ///     Inicializar uma nova instancida da classe <see cref="VipStringWriter" />.
+        /// </summary>
+        /// <param name="encoding"></param>
+        /// <param name="sb"></param>
+        public VipStringWriter(Encoding encoding, StringBuilder sb) : this(encoding, sb, CultureInfo.CurrentCulture) { }
+
+        /// <summary>
+        ///     Inicializar uma nova instancida da classe <see cref="VipStringWriter" />.
+        /// </summary>
+        /// <param name="sb"></param>
+        public VipStringWriter(StringBuilder sb) : this(Encoding.UTF8, sb, CultureInfo.CurrentCulture) { }
+
+        /// <summary>
+        ///     Inicializar uma nova instancida da classe <see cref="VipStringWriter" />.
+        /// </summary>
+        /// <param name="encoding"></param>
+        /// <param name="sb"></param>
+        /// <param name="formatProvider"></param>
+        public VipStringWriter(Encoding encoding, StringBuilder sb, IFormatProvider formatProvider) : base(sb, formatProvider)
         {
             Encoding = encoding;
         }
