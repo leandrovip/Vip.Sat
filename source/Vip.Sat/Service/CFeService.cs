@@ -254,19 +254,22 @@ namespace Vip.Sat.Service
         /// <returns>CFe Iniciada.</returns>
         public CFe NewCFe()
         {
-            var ret = new CFe();
-            ret.InfCFe.Ide.CNPJ = Configuracoes.IdeCNPJ;
-            ret.InfCFe.Ide.TpAmb = null;
-            ret.InfCFe.Ide.NumeroCaixa = Configuracoes.IdeNumeroCaixa;
-            ret.InfCFe.Ide.SignAC = SignAC;
-            ret.InfCFe.Emit.CNPJ = Configuracoes.EmitCNPJ;
-            ret.InfCFe.Emit.IM = Configuracoes.EmitIM;
-            ret.InfCFe.Emit.IE = Configuracoes.EmitIE;
-            ret.InfCFe.Emit.CRegTribISSQN = Configuracoes.EmitCRegTribISSQN;
-            ret.InfCFe.Emit.IndRatISSQN = Configuracoes.EmitIndRatISSQN;
-            ret.InfCFe.VersaoDadosEnt = Configuracoes.InfCFeVersaoDadosEnt;
+            return PreencherCFe(new CFe());
+        }
 
-            return ret;
+        private CFe PreencherCFe(CFe cfe)
+        {
+            cfe.InfCFe.Ide.CNPJ = Configuracoes.IdeCNPJ;
+            cfe.InfCFe.Ide.TpAmb = null;
+            cfe.InfCFe.Ide.NumeroCaixa = Configuracoes.IdeNumeroCaixa;
+            cfe.InfCFe.Ide.SignAC = SignAC;
+            cfe.InfCFe.Emit.CNPJ = Configuracoes.EmitCNPJ;
+            cfe.InfCFe.Emit.IM = Configuracoes.EmitIM;
+            cfe.InfCFe.Emit.IE = Configuracoes.EmitIE;
+            cfe.InfCFe.Emit.CRegTribISSQN = Configuracoes.EmitCRegTribISSQN;
+            cfe.InfCFe.Emit.IndRatISSQN = Configuracoes.EmitIndRatISSQN;
+            cfe.InfCFe.VersaoDadosEnt = Configuracoes.InfCFeVersaoDadosEnt;
+            return cfe;
         }
 
         /// <summary>
@@ -523,6 +526,7 @@ namespace Vip.Sat.Service
             if (Configuracoes.RemoverAcentos)
                 options |= DFeSaveOptions.RemoveAccents;
 
+            if (cfe?.InfCFe.Versao == 0) cfe = PreencherCFe(cfe);
             var dadosVenda = cfe?.GetXml(options);
 
             IniciaComando();

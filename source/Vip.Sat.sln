@@ -12,6 +12,7 @@ EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Vip.Sat.Shared\Vip.Sat.Shared.projitems*{92e4e477-5576-4a8f-8703-5c7b7dd6c121}*SharedItemsImports = 13
+		Vip.Sat.Shared\Vip.Sat.Shared.projitems*{f04ab6e9-623a-4412-813b-990a531f2eb4}*SharedItemsImports = 5
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

@@ -53,7 +53,7 @@
             // 
             // btnEnviarCFe
             // 
-            this.btnEnviarCFe.Location = new System.Drawing.Point(12, 62);
+            this.btnEnviarCFe.Location = new System.Drawing.Point(123, 12);
             this.btnEnviarCFe.Name = "btnEnviarCFe";
             this.btnEnviarCFe.Size = new System.Drawing.Size(105, 44);
             this.btnEnviarCFe.TabIndex = 0;

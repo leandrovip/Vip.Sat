@@ -5,16 +5,16 @@
     <ApplicationIcon />
     <Authors>Leandro Ferreira</Authors>
     <Company>VIP Soluções</Company>
-    <Description>Biblioteca para integração com Cupom Fiscal Eletrônico - SAT. (Fork do ACBr.Net.SAT)</Description>
+    <Description>Biblioteca para integração com Cupom Fiscal Eletrônico - SAT</Description>
     <Copyright>VIP Soluções</Copyright>
     <PackageTags>vip sat cfe</PackageTags>
     <AssemblyName>Vip.Sat</AssemblyName>
     <RootNamespace>Vip.Sat</RootNamespace>
-    <AssemblyVersion>1.0.2.0</AssemblyVersion>
-    <FileVersion>1.0.2.0</FileVersion>
+    <AssemblyVersion>1.0.7.0</AssemblyVersion>
+    <FileVersion>1.0.7.0</FileVersion>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <Version>1.0.2.0</Version>
+    <Version>1.0.7.0</Version>
     <LangVersion>8</LangVersion>
   </PropertyGroup>
 

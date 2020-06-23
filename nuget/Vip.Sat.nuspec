@@ -2,12 +2,12 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
     <metadata>
         <id>Vip.Sat</id>
-        <version>1.0.6</version>
+        <version>1.0.7</version>
         <title>Vip.Sat</title>
         <authors>Leandro Ferreira</authors>
         <owners>Leandro Ferreira</owners>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>Biblioteca para integração com Cupom Fiscal Eletrônico - SAT. (Fork do ACBr.Net.SAT)</description>
+        <description>Biblioteca para integração com Cupom Fiscal Eletrônico</description>
         <copyright>Copyright © VIP Soluções 2020</copyright>
         <language>pt-BR</language>
         <tags>vip sat cfe</tags>
