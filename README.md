@@ -4,6 +4,7 @@
 
 Por favor, acesse e conheça mais dos projetos *ACBr .Net.*
 
+> Projeto foi migrado para https://github.com/leandrovip/Vip.DFe
 ---
 
 Biblioteca para comunicação e execução das funções necessárias para emissão de CFe-SAT.
